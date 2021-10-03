@@ -1,0 +1,67 @@
+// imports
+@import "../node_modules/bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap');
+//@import "./debug.css";
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #F5F6F8;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.link {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-column {
+  flex-direction: column;
+}
+
+.top { align-items: flex-start; }
+.right { justify-content: flex-end; }
+.bottom { align-items: flex-end; }
+.left { justify-content: flex-start; }
+
+.single-spaced, .single-spaced * {
+  line-height: 1;
+}
+
+@media (max-width: 560px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 560px) {
+  .mobile{
+    display: none;
+  }
+}
+
+.button {
+  border: 2px solid black;
+  width: 90%;
+  background-color: #F5F6F8;
+  border: 2px solid black;
+  transition: .2s;
+  border-radius: 10px;
+}
+
+.button:hover {
+	border: 2px solid black;
+	background-color: black;
+	color: white;
+	transform: scale(.98);
+	opacity: 0.9;
+	transition: .2s;
+}
