@@ -17,14 +17,14 @@ import { NavComponent } from 'src/app/components/nav/nav.component';
     FooterComponent,
     DashboardComponent,
     HeaderComponent,
-    NavComponent
+    NavComponent,
   ],
   exports: [
     DashMainComponent,
     FooterComponent,
     DashboardComponent,
     HeaderComponent,
-    NavComponent
+    NavComponent,
   ],
   imports: [
     CommonModule,

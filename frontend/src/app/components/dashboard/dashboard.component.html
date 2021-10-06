@@ -1,25 +1,62 @@
-<div class="hero-main center" style="padding: 2rem;">
+<div class="hero-body center" style="padding: 2rem;">
   <div id="grid" style="width: 800px; ">
 
     <div id="nav" class="column center">
       <app-nav></app-nav>
     </div>
 
-    <div id="a" class="column center">
-      <p>Avatar, nickname</p>
+    <div id="a" class="dash-col column">
+      <div class="columns" style="height: 100px;">
+
+        <div class="column center is-one-quarter" style="background-color: transparent;">
+          <figure class="image is-64x64">
+            <img class="my-img is-rounded" src="../../../assets/imgs/avatar.png">
+          </figure>
+        </div>
+
+        <div class="column center is-auto" style="background-color: transparent; border: none;">
+
+          <!--test-->
+          <div *ngFor = 'let user of users'>
+            <p>{{user.email}}</p>
+          </div>
+          <p>{{users[0].email}}</p>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <div id="b" class="column center">
-      <p>Key itself</p>
+    <div id="b" class="dash-col column center">
+      <p class=""></p>
     </div>
 
-    <div id="c" class="column center">
+    <div id="c" class="dash-col column center">
       <p>Key expiration</p>
     </div>
 
-    <div id="d" class="column center">
-      <p>bot action buttons</p>
+    <div id="d" class="dash-col column center">
+      <div id="btnGrid">
+        <div id="btn1" class="center">
+          <a class="button">Сбросить айпи</a>
+        </div>
+
+        <div id="btn2" class="center">
+          <a class="button">Открыть гайд</a>
+        </div>
+
+        <div id="btn3" class="center">
+          <a class="button">изм спос оплаты</a>
+        </div>
+
+        <div id="btn4" class="center">
+          <a class="button">Отменить автопродление</a>
+        </div>
+      </div>
     </div>
 
   </div>
 </div>
+
+
